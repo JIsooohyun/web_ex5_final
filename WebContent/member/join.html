@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+<style type="text/css">
+.section {
+	width: 100%;
+	height: 882px;
+}
+
+.article {
+	margin: 0 auto;
+	width: 959px;
+	height: 882px;
+	width: 959px;
+}
+
+.notGap {
+	width: 959px;
+	height: 61px;
+}
+
+.joinList {
+	float: left;
+	width: 25%;
+	height: 755px;
+}
+
+.joinList>p {
+	color: #1245AB;
+	font-size: 25px;
+	font-weight: 700;
+	font-style: bolid;
+}
+
+.join {
+	float: left;
+	width: 75%;
+	height: 755px;
+}
+
+.join table {
+	margin-top: 5px;
+}
+
+.n1 {
+	font-size: 17px;
+	font-style: bolid;
+	font-weight: 800;
+	padding-right: 20px;
+}
+
+.n2 {
+	padding-right: 420px;
+	padding-top: 5px;
+	font-size: 14px;
+	color: gray;
+	font-style: bolid;
+	font-weight: 800;
+}
+
+.n3 {
+	padding-top: 5px;
+	font-size: 14px;
+	font-style: bolid;
+	font-weight: 200;
+}
+
+#nul>li {
+	clear: both;
+	margin-bottom: 2px;
+	list-style: none;
+	color: black;
+	font-weight: 600;
+}
+
+#nul {
+	padding: 0;
+}
+
+#nul a:active {
+	color: black;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-weight: bold;
+}
+
+.pe {
+	border-collapse: collapse;
+}
+
+.pe td {
+	width: 170px;
+	height: 30px;
+	padding: 5px;
+}
+
+.pe select {
+	width: 180px;
+	height: 30px;
+}
+
+#pwck {
+	height: 25px;
+	width: 500px;
+	font-size: 13px;
+}
+.rg{
+	float : right;
+}
+</style>
+</head>
+<body>
+	<!-- Header Start -->
+	<header class="header">
+		<div class="header_wrap">
+			<!-- 사이즈 조절하기 -->
+			<div class="logo">
+				<!-- 사이즈 조절하기 -->
+				<a href="/web_ex5/cubeIndex.html"><img
+					src="/web_ex5/images/topmenu_01.png"></a>
+			</div>
+			<div class="list">
+				<ul class="nav">
+					<li><a href="#"> COMPANY</a></li>
+					<li><a href="#"> ARTISTS</a></li>
+					<li><a href="#"> MULTIMEDIA</a></li>
+					<li><a href="#"> AUDITION</a></li>
+					<li><a href="/web_ex5/notice.html"> NOTICE</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="./memberLogin.html">로그인</a></li>
+					<li><a href="./tos.html">회원가입</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<img src="/web_ex5/images/cubeglobal.png" class="global">
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<!-- Section Start -->
+	<section class="section">
+		<article class="article">
+			<div class="notGap"></div>
+			<div class="joinList">
+				<p>NOTICE</p>
+				<ul id="nul">
+					<li><a href="./join.html">JOIN</a></li>
+					<li><a href="#">ID/PW SEARCH</a></li>
+				</ul>
+			</div>
+			<div class="join">
+				<div id="ntcheck">
+					<table>
+						<tr>
+							<td class="n1">JOIN</td>
+							<td class="n2">회원가입</td>
+							<td class="n3"><a href="../cubeIndex.html"><img
+									src="../images/notice_home.png"></a> &nbsp;&gt;&nbsp;MEMBER
+								&nbsp;&gt; JOIN</td>
+						</tr>
+					</table>
+				</div>
+				<hr style="border: 1px solid gray;">
+				<p style="font-size: 17px">회원가입</p>
+				<hr style="border: 1px solid gray;">
+				<table class="pe">
+					<tr>
+						<td>아이디</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>비밀번호</td>
+						<td><input type="password"></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td id="pwck">비밀번호는 8자리 이상이어야 하며 영문과 숫자, 특수문자를 반드시 포함해야 합니다.</td>
+					</tr>
+					<tr>
+						<td>비밀번호 확인</td>
+						<td><input type="password"></td>
+					</tr>
+					<tr>
+						<td>이름</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>이메일 주소</td>
+						<td><input type="email"></td>
+					</tr>
+					<tr>
+						<td>비밀번호 찾기 질문/답변</td>
+						<td><select>
+								<option>다른 이메일 주소는?</option>
+								<option>나의 보물 1호는?</option>
+								<option>나의 출신 고등학교는?</option>
+								<option>나의 이상형은?</option>
+								<option>어머니 성함은?</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>홈페이지</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>블로그</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>생일</td>
+						<td><input type="text" placeholder="YYYY-MM-DD"> <input
+							type="submit" value="삭제"></td>
+					</tr>
+					<tr>
+						<td>주소</td>
+						<td><input type="text" placeholder="우편번호"> <input
+							type="submit" value="검색"></td>
+					</tr>
+					<tr>
+						<td>전화번호</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>핸드폰번호</td>
+						<td><input type="text"></td>
+					</tr>
+					<tr>
+						<td>메일링 가입</td>
+						<td><input type="radio" name="em"> 예<br> <input
+							type="radio" name="em"> 아니오</td>
+					</tr>
+					<tr>
+						<td>쪽지허용</td>
+						<td><input type="radio" name="message"> 모두 허용<br>
+							<input type="radio" name="message"> 등록된 친구들만 허용<br>
+							<input type="radio" name="message"> 모두 금지</td>
+					</tr>
+				</table>
+				<hr style="border: 1px solid gray;">
+				<input type="submit" value="취소">
+				<input type="submit" value="등록" class="rg"  formaction="/web_ex5/cubeIndex.html">
+			</div>
+
+
+
+
+		</article>
+	</section>
+	<!-- Section End -->
+
+
+	<!-- footer Start -->
+	<footer class="footer">
+		<div class="footer-wrap">
+			<img src="/web_ex5/images/bottomt.PNG" class="bottom-img">
+			<div class="bottom-nav">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">이메일주소 무단수집거부</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+				</ul>
+				<select class="foot-select">
+					<option value="#" class="opt1">CUBEE FAMILY SITE</option>
+					<option value="#">CUBEE</option>
+					<option value="#">CUBEE Twiter</option>
+					<option value="#">CUBEE Facebook</option>
+					<option value="#">CUBEE Youtube</option>
+					<option value="#">CUBEE Japan</option>
+					<option value="#">큐브 웨이보</option>
+					<option>-</option>
+					<option value="#">뮤직큐브</option>
+					<option value="#">모던뮤직아카데미</option>
+				</select>
+				<div class="reset"></div>
+				<div class="foot">
+					7F, 83, ACHASAN-RO, SEONGDONG-GU, SEOUL, 04793 KOREA TEL
+					:82-2-3445-1045 FAX : 02-2-3445-1048 <br>
+				</div>
+				<div class="reset"></div>
+				<div class="foot">COMPANY (C) CUBE ENTERTAINMENT INC, ALL
+					RIGHT RESERVED</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- footer End -->
+</body>
+</html>

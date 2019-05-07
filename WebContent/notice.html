@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="./css/layout.css">
+<style type="text/css">
+.section {
+	width: 100%;
+	height: 882px;
+}
+
+.article {
+	margin: 0 auto;
+	width: 959px;
+	height: 882px;
+	width: 959px;
+}
+
+.notGap {
+	width: 959px;
+	height: 61px;
+}
+
+.notList {
+	float: left;
+	width: 25%;
+	height: 755px;
+}
+
+.notList>p {
+	color: #1245AB;
+	font-size: 25px;
+	font-weight: 700;
+	font-style: bolid;
+}
+
+.notice {
+	float: left;
+	width: 75%;
+	height: 755px;
+}
+
+.notice table {
+	margin-top: 5px;
+}
+
+.n1 {
+	font-size: 17px;
+	font-style: bolid;
+	font-weight: 800;
+	padding-right: 20px;
+}
+
+.n2 {
+	padding-right: 420px;
+	padding-top: 5px;
+	font-size: 14px;
+	color: gray;
+	font-style: bolid;
+	font-weight: 800;
+}
+
+.n3 {
+	padding-top: 5px;
+	font-size: 14px;
+	font-style: bolid;
+	font-weight: 200;
+}
+
+/*.notice>table {
+	float: left;
+}*/
+#ntcheck {
+	width: 713px;
+	height: 40px;
+}
+
+#listnotice {
+	margin: 0 auto;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#listnotice td>a {
+	color: gray;
+}
+
+.nt tr:first-child {
+	background-color: #F6F6F6;
+	text-align: center;
+	font-size: 15px;
+	color: gray;
+	font-weight: 800;
+	border-top: 1px solid gray;
+	text-align: center;
+	font-size: 15px;
+	color: gray;
+	font-weight: 800;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+.nt tr {
+	width: 100%;
+	height: 32px;
+	font-size: 14px;
+	color: gray;
+	border-bottom: 1px solid gray;
+}
+
+.nt td:first-child {
+	text-align: center;
+}
+
+.nt td:nth-child(3) {
+	text-align: center;
+}
+
+.nt td:nth-child(4) {
+	text-align: center;
+}
+
+.nt td:nth-child(5) {
+	text-align: center;
+}
+
+#nul>li {
+	clear: both;
+	margin-bottom: 2px;
+	list-style: none;
+	color: black;
+	font-weight: 600;
+}
+
+#nul {
+	padding: 0;
+}
+
+#nul a:active {
+	color: black;
+}
+#ptcheck{
+	margin-top : 15px;
+}
+#ptcheck > table{
+	margin: 0 auto;
+}
+</style>
+</head>
+<body>
+	<!-- Header Start -->
+	<header class="header">
+		<div class="header_wrap">
+			<!-- 사이즈 조절하기 -->
+			<div class="logo">
+				<!-- 사이즈 조절하기 -->
+				<a href="/web_ex5/cubeIndex.html"><img
+					src="/web_ex5/images/topmenu_01.png"></a>
+			</div>
+			<div class="list">
+				<ul class="nav">
+					<li><a href="#"> COMPANY</a></li>
+					<li><a href="#"> ARTISTS</a></li>
+					<li><a href="#"> MULTIMEDIA</a></li>
+					<li><a href="#"> AUDITION</a></li>
+					<li><a href="/web_ex5/notice.html"> NOTICE</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="./member/memberLogin.html">로그인</a></li>
+					<li><a href="./member/tos.html">회원가입</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<img src="/web_ex5/images/cubeglobal.png" class="global">
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<!-- Section Start -->
+	<section class="section">
+		<article class="article">
+			<div class="notGap"></div>
+			<div class="notList">
+				<p>NOTICE</p>
+				<ul id="nul">
+					<li><a href="./notice.html">NOTICE</a></li>
+					<li><a href="#">FROM CUBE</a></li>
+					<li><a href="#">TO CUBE</a></li>
+				</ul>
+			</div>
+			<div class="notice">
+				<div id="ntcheck">
+					<table>
+						<tr>
+							<td class="n1">NOTICE</td>
+							<td class="n2">공지사항</td>
+							<td class="n3"><a href="./cubeIndex.html"><img
+									src="./images/notice_home.png"></a> &nbsp;&gt;&nbsp;notice
+								&nbsp;&gt; notice</td>
+						</tr>
+					</table>
+				</div>
+				<hr style="border: 1px solid gray;">
+				<table id="listnotice" class="nt">
+					<tr style="height: 35px; whidth: 100%">
+						<td>번호</td>
+						<td>제목</td>
+						<td>글쓴이</td>
+						<td>날짜</td>
+						<td>조회수</td>
+					</tr>
+					<tr>
+						<td>65</td>
+						<td><a href="#">아티스트 명예훼손및 권리침해 관련</a></td>
+						<td>관리자</td>
+						<td>2018.01.25</td>
+						<td>7208</td>
+					</tr>
+					<tr>
+						<td>64</td>
+						<td><a href="#">비투비의 일곱 번째 미니앨범 [I Mean]이 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2018.01.01</td>
+						<td>2365</td>
+					</tr>
+					<tr>
+						<td>63</td>
+						<td><a href="#">노지훈의 두 번째 미니앨범 [感]이 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.12.20</td>
+						<td>3154</td>
+					</tr>
+					<tr>
+						<td>62</td>
+						<td><a href="#">현아의 네 번째 미니앨범 [A+]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.11.25</td>
+						<td>1268</td>
+					</tr>
+					<tr>
+						<td>61</td>
+						<td><a href="#">비스트의 여덟 번째 미니앨범 [Ordinary]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.11.11</td>
+						<td>4567</td>
+					</tr>
+					<tr>
+						<td>60</td>
+						<td><a href="#">비스트의 디지털싱글 [일하러 가야 돼]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.10.25</td>
+						<td>8541</td>
+					</tr>
+					<tr>
+						<td>59</td>
+						<td><a href="#">비투비의 첫 번째 정규앨범 [COMPLETE]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.09.19</td>
+						<td>5412</td>
+					</tr>
+					<tr>
+						<td>58</td>
+						<td><a href="#">장현승의 첫 번째 미니앨범 [MY]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.08.16</td>
+						<td>6208</td>
+					</tr>
+					<tr>
+						<td>57</td>
+						<td><a href="#">CLC의 디지털 싱글 [Eighteen]이 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.07.11</td>
+						<td>4356</td>
+					</tr>
+					<tr>
+						<td>56</td>
+						<td><a href="#">포미닛의 여섯 번째 미니앨범 [Crazy]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.06.04</td>
+						<td>1354</td>
+					</tr>
+					<tr>
+						<td>55</td>
+						<td><a href="#">비투비의 다섯번째 미니앨범 [MOVE]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.04.15</td>
+						<td>7208</td>
+					</tr>
+					<tr>
+						<td>54</td>
+						<td><a href="#">신지훈 디지털 싱글 [울보]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.03.25</td>
+						<td>3684</td>
+					</tr>
+					<tr>
+						<td>53</td>
+						<td><a href="#">현아의 세 번째 미니앨범 [A Talk]가 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.01.25</td>
+						<td>1897</td>
+					</tr>
+					<tr>
+						<td>53</td>
+						<td><a href="#">비투비 네 번째 미니앨범 [뛰뛰빵빵]이 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.01.25</td>
+						<td>1897</td>
+					</tr>
+					<tr>
+						<td>53</td>
+						<td><a href="#">류-큐브 기부 프로젝트 PART 2 [작은 달]이 발매되었습니다.</a></td>
+						<td>관리자</td>
+						<td>2017.01.25</td>
+						<td>1897</td>
+					</tr>
+					<tr>
+						<td>53</td>
+						<td><a href="#">신지훈 디지털싱글 [아프고 아프다]가 발매됩니다.</a></td>
+						<td>관리자</td>
+						<td>2017.01.25</td>
+						<td>1897</td>
+					</tr>
+					<tr>
+						<td>53</td>
+						<td><a href="#">포미닛 디지털 싱글 [물 좋아?] 발매</a></td>
+						<td>관리자</td>
+						<td>2017.01.25</td>
+						<td>1897</td>
+					</tr>
+					<tr>
+						<td>53</td>
+						<td><a href="#">비스트 [괜찮겠니] 2013년 5월 29일 발매 </a></td>
+						<td>관리자</td>
+						<td>2017.01.25</td>
+						<td>1897</td>
+					</tr>
+				</table>
+			<div class="reset"></div>
+			<div id="ptcheck">
+				<table>
+
+					<tr >
+						<td><a> &lt; Prev &nbsp;</a> <a> 1 &nbsp;</a> <a> 2
+								&nbsp;</a> <a> 3 &nbsp;</a> <a> 4 &nbsp;</a> <a> &nbsp;Next&gt;
+						</a>
+					</tr>
+
+				</table>
+			</div>
+
+			</div>
+
+		</article>
+	</section>
+	<!-- Section End -->
+
+
+	<!-- footer Start -->
+	<footer class="footer">
+		<div class="footer-wrap">
+			<img src="/web_ex5/images/bottomt.PNG" class="bottom-img">
+			<div class="bottom-nav">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">이메일주소 무단수집거부</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+				</ul>
+				<select class="foot-select">
+					<option value="#" class="opt1">CUBEE FAMILY SITE</option>
+					<option value="#">CUBEE</option>
+					<option value="#">CUBEE Twiter</option>
+					<option value="#">CUBEE Facebook</option>
+					<option value="#">CUBEE Youtube</option>
+					<option value="#">CUBEE Japan</option>
+					<option value="#">큐브 웨이보</option>
+					<option>-</option>
+					<option value="#">뮤직큐브</option>
+					<option value="#">모던뮤직아카데미</option>
+				</select>
+				<div class="reset"></div>
+				<div class="foot">
+					7F, 83, ACHASAN-RO, SEONGDONG-GU, SEOUL, 04793 KOREA TEL
+					:82-2-3445-1045 FAX : 02-2-3445-1048 <br>
+				</div>
+				<div class="reset"></div>
+				<div class="foot">COMPANY (C) CUBE ENTERTAINMENT INC, ALL
+					RIGHT RESERVED</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- footer End -->
+</body>
+</html>

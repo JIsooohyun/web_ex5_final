@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/layout.css">
+<style>
+.section {
+	width: 100%;
+	height: 882px;
+}
+.main_login{
+	margin : 0 auto;
+	width : 398px;
+	height : 225px;
+	border: 1px solid gray;
+	border-radius: 8px;
+	box-shadow: black;
+}
+.login{
+	font-size : 17px;
+	font-weight : 800;
+	width : 100px;
+	margin-top: 10px;
+	margin-left : 20px;
+}
+.gap{
+	width : 100%;
+	height: 300px;
+	margin-bottom: 15px;
+}
+.lh{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+input{
+	margin: 0 auto;
+
+}
+.uid{
+		width : 350px;
+}
+.upw{
+		width : 350px;
+}
+.id{
+	width : 350px;
+	margin : 15px;
+}
+
+.pw{
+	width : 350px;
+	margin:15px;
+}
+.upkepp{
+	margin : 15px;
+}
+#btn{
+	float : right;
+}
+.login-footer{
+	float : right;
+}
+.login-footer > a{
+	font-size : 13px;
+	padding-right : 5px;
+	color : black;
+}
+</style>
+</head>
+<body>
+	<!-- Header Start -->
+	<header class="header">
+		<div class="header_wrap">
+			<!-- 사이즈 조절하기 -->
+			<div class="logo">
+				<!-- 사이즈 조절하기 -->
+				<a href="/web_ex5/cubeIndex.html"><img
+					src="/web_ex5/images/topmenu_01.png"></a>
+			</div>
+			<div class="list">
+				<ul class="nav">
+					<li><a href="#"> COMPANY</a></li>
+					<li><a href="#"> ARTISTS</a></li>
+					<li><a href="#"> MULTIMEDIA</a></li>
+					<li><a href="#"> AUDITION</a></li>
+					<li><a href="/web_ex5/notice.html"> NOTICE</a></li>
+				</ul>
+				<ul class="member">
+					<li><a href="/web_ex5/member/memberLogin.html">로그인</a></li>
+					<li><a href="/web_ex5/member/tos.html">회원가입</a></li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<img src="/web_ex5/images/cubeglobal.png" class="global">
+			</div>
+		</div>
+	</header>
+	<!-- Header End -->
+
+	<!-- Contents Start -->
+	<section class="section">
+		<div class="gap"></div>
+		<div class = "main_login"> 
+			<div class="login">로그인 </div>
+			<hr style="border: 1px solid gray;" class="lh">
+			<div> 
+			<div class="id"> 
+				<input type = "text" placeholder="아이디" class="uid">
+				
+			</div>
+			
+			<div class="pw">
+				<input type = "password" placeholder="비밀번호" class="upw">
+			</div>
+			<div class="upkepp">
+				<input type = "checkbox"> 로그인 상태 유지
+				<input type="submit" value = "로그인" id="btn">
+			</div>
+			<div class="reset"></div>
+			<hr style="border: 1px solid gray;" class="lh">
+			<div class="login-footer"> 
+				<a href = "#">ID/PW찾기</a>
+				<a href="./tos.html">회원가입</a>
+			</div>
+
+			</div>		
+		</div>
+	</section>
+	<!-- Contents End -->
+
+	<!-- footer Start -->
+	<footer class="footer">
+		<div class="footer-wrap">
+			<img src="/web_ex5/images/bottomt.PNG" class="bottom-img">
+			<div class="bottom-nav">
+				<ul>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">이메일주소 무단수집거부</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+				</ul>
+				<select class="foot-select">
+					<option value="#" class="opt1">CUBEE FAMILY SITE</option>
+					<option value="#">CUBEE</option>
+					<option value="#">CUBEE Twiter</option>
+					<option value="#">CUBEE Facebook</option>
+					<option value="#">CUBEE Youtube</option>
+					<option value="#">CUBEE Japan</option>
+					<option value="#">큐브 웨이보</option>
+					<option>-</option>
+					<option value="#">뮤직큐브</option>
+					<option value="#">모던뮤직아카데미</option>
+				</select>
+				<div class="reset"></div>
+				<div class="foot">
+					7F, 83, ACHASAN-RO, SEONGDONG-GU, SEOUL, 04793 KOREA TEL
+					:82-2-3445-1045 FAX : 02-2-3445-1048 <br>
+				</div>
+				<div class="reset"></div>
+				<div class="foot">COMPANY (C) CUBE ENTERTAINMENT INC, ALL
+					RIGHT RESERVED</div>
+			</div>
+
+		</div>
+	</footer>
+	<!-- footer End -->
+</body>
+</html>
